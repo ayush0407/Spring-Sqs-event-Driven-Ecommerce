@@ -1,0 +1,23 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: us-east-1  # Specify your AWS region here
+    credentials:
+      access-key: mnvvsvsjvljsvjl
+      secret-key: mbvksjbvkjsvkjs
+
+    sqs:
+      enabled: true
+      queue-name: spring-sqs  # Replace with your queue name
+
+logging:
+  level:
+    com:
+      example: DEBUG  # Enable debug logs for your package if needed
+    org:
+      springframework:
+        cloud:
+          aws:
+            messaging: DEBUG  # Enable debug logs for AWS SQS messaging
